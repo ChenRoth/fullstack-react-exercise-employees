@@ -23,7 +23,7 @@ export class DetailsPage extends React.Component<Props> {
             <div>
               <Link to="/employees">Back to Employee List</Link>
               <h6>Showing details for ID #{id}</h6>
-              <p>{employee.name}</p>
+              <p>{employee.firstName}</p>
             </div>
           );
         }}

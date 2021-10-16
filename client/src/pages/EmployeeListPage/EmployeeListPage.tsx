@@ -1,9 +1,22 @@
+import axios from "axios";
 import React from "react";
 import { ListGroup, ListGroupItem } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { StateContext } from "../../app-state";
+import { EmployeeModel } from "../../models/employee.model";
 
 export class EmployeeListPage extends React.Component {
+  static contextType = StateContext;
+  context!: React.ContextType<typeof StateContext>;
+
+  async componentDidMount() {
+    const { setAppState } = this.context;
+    const {data: employees} = await axios.get<EmployeeModel[]>('http://localhost:4000/api/employees');
+    setAppState({
+      employees,
+    });
+  }
+
   render() {
     return (
       <StateContext.Consumer>

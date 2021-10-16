@@ -6,7 +6,7 @@
 
 * unzip the file to an easily accessible location, e.g. C:\temp\test_db
 
-* create a new schema `employee_db` in your MySQL server using MySQL Workbench
+* create a new schema `employees` in your MySQL server using MySQL Workbench
 
 * open CMD/terminal, go to the location where you unzipped the test_db-master directory and type `mysql -u root -p employee_db < employees.sql`
   you'll then be prompted for your MySQL password

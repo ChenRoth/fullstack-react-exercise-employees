@@ -1,3 +1,4 @@
+import { AboutPage } from "./pages/AboutPage/AboutPage";
 import { EmployeeListPage } from "./pages/EmployeeListPage/EmployeeListPage";
 import { HomePage } from "./pages/HomePage/HomePage";
 
@@ -12,4 +13,9 @@ export const mainPages = [
     path: "/employees",
     component: EmployeeListPage,
   },
+  {
+    title: 'About',
+    path: '/about',
+    component: AboutPage
+  }
 ];

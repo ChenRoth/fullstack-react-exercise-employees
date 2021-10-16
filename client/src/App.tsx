@@ -11,12 +11,7 @@ import { DetailsPage } from "./pages/DetailsPage/DetailsPage";
 export default class App extends React.Component<{}, AppState> {
   state: AppState = {
     message: "hello there!",
-    employees: [
-      { id: 1, name: "John" },
-      { id: 2, name: "George" },
-      { id: 3, name: "Paul" },
-      { id: 4, name: "Ringo" },
-    ],
+    employees: [],
   };
 
   setAppState = (newAppState: Partial<AppState>) => {
