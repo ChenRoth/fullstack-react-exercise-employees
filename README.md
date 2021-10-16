@@ -2,7 +2,7 @@
 
 ## setting up the database
 
-* get the Employee database by download the https://github.com/datacharmer/test_db repository (https://github.com/datacharmer/test_db/archive/refs/heads/master.zip)
+* get the Employee database by downloading the https://github.com/datacharmer/test_db repository (https://github.com/datacharmer/test_db/archive/refs/heads/master.zip)
 
 * unzip the file to an easily accessible location, e.g. C:\temp\test_db
 
