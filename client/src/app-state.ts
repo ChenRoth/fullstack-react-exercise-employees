@@ -1,14 +1,21 @@
-import React from 'react';
-import { EmployeeModel } from './models/employee.model';
+import React from "react";
+import { DepartmentModel } from "./models/department.model";
+import { EmployeeModel } from "./models/employee.model";
+import { EmployeeListingModel } from "./models/employeeListing.model";
 
 export interface AppState {
-    message: string;
-    employees: EmployeeModel[]
+  employees: EmployeeListingModel[];
+  employeeDetails: EmployeeModel | null;
+  departments: DepartmentModel[];
+  titles: string[];
 }
 
 interface Context {
-    appState: AppState;
-    setAppState: (state: Partial<AppState>) => void
+  appState: AppState;
+  setAppState: (state: Partial<AppState>) => void;
 }
 
-export const StateContext = React.createContext<Context>({ appState: {} as any, setAppState: (state: Partial<AppState>) => null });
+export const StateContext = React.createContext<Context>({
+  appState: {} as any,
+  setAppState: (state: Partial<AppState>) => null,
+});

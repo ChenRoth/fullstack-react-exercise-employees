@@ -7,14 +7,9 @@ export class HomePage extends React.Component {
     return (
       <StateContext.Consumer>
         {({ appState, setAppState }) => {
-          const { message } = appState;
           return (
             <div>
-              <h6>This example shows how to use StateContext</h6>
-              <p>Message: {message}</p>
-              <Button variant="success" onClick={() => setAppState({ message: "Goodbye!" })}>
-                Change Message
-              </Button>
+              <h6>Welcome to SoftTech!</h6>
             </div>
           );
         }}
